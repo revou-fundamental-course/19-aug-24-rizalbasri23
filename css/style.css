@@ -1,0 +1,272 @@
+body { 
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #5294ff;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    font-size: 1.5em;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.nav-menu li {
+    margin: 0 15px;
+}
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.nav-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+
+
+
+main {
+    padding-top: 60px; 
+}
+
+section {
+    padding: 100px 0;
+}
+.sec-1{
+    padding: 20px 0;
+}
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.portfolio-item {
+    margin: 20px 0;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Layouts */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+  }
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #5294ff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        display: flex;
+    }
+    .nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+        
+    }
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+    }
+}
+
+.banner-img {
+/* header */
+    padding: 70px 0px 20px;
+     background-image: url("../assets/anime.jpg"); 
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: -200px; */
+    color: white;
+  }
+.benner-img {
+    margin: 10px 0 20px;
+    line-height: 1.8em;
+  }
+
+
+  
+#services {
+    background-color: rgb(224, 224, 224);
+    padding:  0; 
+    margin: 10x;
+  }
+  
+  .services .pre-title {
+    margin: 0 auto;
+  }
+  
+
+  .service {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: gray;
+    border-radius: 20px;
+  }
+  
+  .service h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+  
+  .service-icon {
+    background: blue;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .service-icon svg {
+    fill: red;
+  }
+  
+  .service-icon {
+    background:black;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .service-icon svg {
+    fill: blue;
+  }
+  
+
+
+/* Contact Section - Right Side */
+.container-form {
+    padding: 4rem;
+  }
+  
+  .container-form {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+  }
+  
+  .contactForm {
+    margin-bottom: 1.4rem;
+  }
+  select,
+   input,
+   textarea {
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+    font-family: "Roboto", sans-serif;
+    background: rgb(211, 210, 210);
+    border: 1px solid var(--borderColor);
+    border-radius: 3px;
+    resize: none;
+  }
+  
+  input::placeholder,
+   textarea::placeholder {
+    color: #9d9fa1;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #7d7d7d;
+  }
+  
+  button {
+    width: 100px;
+    padding: 0.75rem 1.3rem;
+    background-color:#5294ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .btn-submit:hover {
+    background-color: rgb(51, 51, 51);
+  }
+
+
+
+/* Footer Section */
+footer {
+    background:#5294ff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-icons {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-icons a {
+    margin: 0 0.5rem;
+  }
+  
+  .footer-icons svg {
+    fill: #000000;
+  }
+  
+  .footer-icons a:hover svg {
+    fill: #f9f3f3;
+  }
