@@ -254,11 +254,11 @@ footer {
   }
   
   .footer-icons {
-    margin-bottom: 1rem;
+    margin-bottom: rem;
   }
   
   .footer-icons a {
-    margin: 0 0.5rem;
+    margin:0 0.4rem;
   }
   
   .footer-icons svg {
